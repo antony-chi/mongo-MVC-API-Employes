@@ -2,8 +2,8 @@ import {Schema, mode, model } from "mongoose";
 
 const userSchema = new Schema({
     name: String,
-    email: {type: String, require:true},
-    password: {type: String, requiere: true},
+    email: {type: String, required:true},
+    password: {type: String, requiered: true},
     role: String
 });
 
