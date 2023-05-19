@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 export async function  connect(){
 
     try{
-        await mongoose.connect("mongodb://127.0.0.1/JWT-Aplication",{
+        await mongoose.connect("mongodb://localhost:27017/JWT-Aplication",{
             useNewUrlParser: true
         });
         console.log("database connected !!")

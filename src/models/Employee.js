@@ -1,11 +1,12 @@
 import {Schema, model } from "mongoose";
 
-const userSchema = new Schema({
+const EmployeeSchema = new Schema({
     name: String,
     email: {type: String, required:true},
-    password: {type: String, requiered: true},
-    role: String
+    ine: String,
+    age: Number,
+    position: String
 });
 
 //esportamos el modelo con nombre singular porque Mongoose lo convierte a plural automaticamente
-export default model('User',userSchema)
+export default model('Employee',EmployeeSchema)
